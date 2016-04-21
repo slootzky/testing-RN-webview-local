@@ -13,7 +13,7 @@ var {
   WebView
 } = React;
 
-var ReactNativeReactWebview = React.createClass({
+var testt = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
