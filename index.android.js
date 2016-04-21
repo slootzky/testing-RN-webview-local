@@ -17,10 +17,14 @@ var testt = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
+	  <Text style={styles.textView}> checking webview</Text>
         <WebView
           style={styles.webView}
-          source ={{url:'web/helloworld.html'}}
+          source ={{uri:'web/helloworld.html'}}
+		   javaScriptEnabled={true}
+		   scalesPageToFit={true}
         />
+		<Text style={styles.textView}> up until here</Text>
       </View>
     );
   }
@@ -34,6 +38,9 @@ var styles = StyleSheet.create({
   webView: {
     height: 350,
   },
+  textView:{
+  height:50
+  }
 });
 
 AppRegistry.registerComponent('testt', () => testt);
